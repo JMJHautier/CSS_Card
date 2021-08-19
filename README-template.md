@@ -5,9 +5,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+
   - [Links](#links)
+
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -25,9 +25,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 construction de la structure puis styling des box une par une.
@@ -43,7 +40,7 @@ L'ombre sur le bouton, l'ajustement de l'image sont les tâches qui m'ont pris l
 
 ### What I learned
 
-Pour flexbox:
+#### Pour flexbox:
 
 - main axis == justify-content, quelque soit le flex orientation
 
@@ -61,11 +58,11 @@ Pour flexbox:
 
 - align-self: stretch est bien pour forcer une box à prendre toute la place
 
-pour sass:
+#### pour sass:
 
 - il faut 'watch input output' pour que la compilation soit automatique
 
-En général:
+#### En général:
 
 - créer une ombre, pas si facile. ajouter de la luminosité non plus. code de celle que j'ai créé
 
