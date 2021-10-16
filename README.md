@@ -1,3 +1,70 @@
+## My process
+
+construction de la structure puis styling des box une par une.
+L'ombre sur le bouton, l'ajustement de l'image sont les tâches qui m'ont pris le plus de temps
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- sass
+
+### What I learned
+
+#### Pour flexbox:
+
+- main axis == justify-content, quelque soit le flex orientation
+
+- cross axis = align-items, quelque soit le flex orientation
+
+- on ne peut pas 'justify-self' car l'axe principal bouge comme un bloc
+
+- pour 'pousser' un élément particulier qui se trouve sur l'axe principal, on peut utiliser un 'div class=push' avec une propriété de margin:auto:
+
+```css
+&__push {
+  margin-left: auto;
+}
+```
+
+- align-self: stretch est bien pour forcer une box à prendre toute la place
+
+#### pour sass:
+
+- il faut 'watch input output' pour que la compilation soit automatique
+
+#### En général:
+
+- créer une ombre, pas si facile. ajouter de la luminosité non plus. code de celle que j'ai créé
+
+```css
+.container {
+  filter: drop-shadow(0 10px 0.75rem lighten(vars.$primary-bright, 30%));
+}
+```
+
+- pour les images: il faut leur ajouter des bordures-radius manuellement, cover etc. ne prennent pas en compte les bordures.
+- background-image fonctionne, mais requiert un wrapper. On peut s'en passer avec le code suivant (à noter aussi le border radius du point précédent):
+
+```css
+.image {
+  height: 100%;
+  width: vars.$widthMobile;
+  object-fit: contain;
+  border-radius: 25px 25px 0 0;
+}
+```
+
+**Note: Delete this note and the content within this section and replace with your own learnings.**
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
 # Frontend Mentor - Order summary card
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
@@ -24,9 +91,9 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## Where to find everything
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
 If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
@@ -73,12 +140,12 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
+1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
 3. Share your solution on other social channels like LinkedIn.
 4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
 
 The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
